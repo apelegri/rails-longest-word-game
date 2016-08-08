@@ -1,0 +1,12 @@
+<h1>LongestWord#game</h1>
+<p>Find me in app/views/longest_word/game.html.erb</p>
+
+<%= @grid %>
+<form action="/score">
+
+  <!-- <input type="hidden" name="hidden_text" value="<%#@my_hidden_text%>"> -->
+  <input type="text" id="answer" name="word">
+  <input type="hidden" name="grid" value="<%= @grid.join("") %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Check your score">
+</form>
